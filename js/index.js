@@ -10,8 +10,10 @@ const ArrayChallenge = (arr) => {
     if (arr[i] < min) {
       min = arr[i];
     }
-    if (arr[i] - min > max) {
-      max = arr[i] - min;
+
+    const current = arr[i] - min;
+    if (current > max) {
+      max = current;
     }
   }
 
